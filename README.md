@@ -72,30 +72,45 @@ This my second team project at alx_se program. In this collaboration project we 
 
 #### TESTING
 
-	 We tested our shell usinh the folloeing:
+	 We tested our shell using the following:
 
 * For the interactive mode
 
 	$ ./hsh
+
 	($) /bin/ls
+
 	hsh main.c shell.c
+
 	($)
+
 	($) exit
+
 	$
 
 
 * Non-interactive mode
 
 	$ echo "/bin/ls" | ./hsh
+
 	hsh main.c shell.c test_ls_2
+
 	$
+
 	$ cat test_ls_2
+
 	/bin/ls
+
 	/bin/ls
+
 	$
+
 	$ cat test_ls_2 | ./hsh
+
 	hsh main.c shell.c test_ls_2
+
 	hsh main.c shell.c test_ls_2
+
 	$
 
 
