@@ -44,11 +44,6 @@ void execute_non_interactive(char *command)
 		int status;
 
 		waitpid(pid, &status, 0);
-
-		if (WIFEXITED(status))
-		{
-			display_chars("Command executed with exit status \n", WEXITSTATUS(status));
-		}
 	}
 }
 
