@@ -50,6 +50,7 @@ int interactive_mode(void)
 
 		if (my_strncmp(command, "exit", 4) == 0)
 			{
+				free(command);
 				return (2);
 			}
 
