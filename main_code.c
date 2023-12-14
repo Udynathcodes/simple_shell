@@ -50,7 +50,7 @@ int interactive_mode(void)
 
 		if (args[0] != NULL && my_strcmp2(args[0], "exit") == 0)
 		{
-			break;
+			exit(127);
 		}
 
 		execute_command(args);
