@@ -22,6 +22,9 @@
 
 extern char **environ;
 
+/* my_strncmp*/
+int custom_strncmp(const char *str1, const char *str2, size_t n);
+
 /* main.c*/
 int interactive_mode(void);
 int non_interactive_mode(void);
