@@ -48,10 +48,10 @@ int interactive_mode(void)
 
 		tokenize_command(command, args);
 
-		if (args[0] != NULL && my_strcmp2(args[0], "exit") == 0)
-		{
-			exit(127);
-		}
+		if (my_strncmp(command, "exit", 4) == 0)
+			{
+				return (2);
+			}
 
 		execute_command(args);
 	}
